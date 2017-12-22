@@ -1,0 +1,172 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+html{
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto, sans-serif;
+}
+header{
+  background-color: hsl(200, 30%, 50%);
+  color: #fff;
+}
+header h1{
+  font-size: 3rem;
+  line-height: 5rem;
+  height: 5rem;
+  text-align: center;
+  text-shadow:1px 1px 1px hsl(0, 100%, 100%),
+    -1px -1px 1px hsl(0, 0%, 0%);
+}
+.contacts{
+  width: 70%;
+  border:1px solid #aaa;
+  list-style:none;
+  margin: 1rem auto 5rem auto;
+  border-radius: 3px;
+}
+.contact{
+  height: 7rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+.contact:hover{
+  background-color: #f4f4f4;
+}
+
+.contact .delete{
+  float:right;
+  width: 10%;
+  height: 7rem;
+  background-color: #e4e4e4;
+  text-align:center;
+  line-height:7rem;
+  font-size: 2rem;
+  display:block;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/179202/circle-x.svg);
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: center center;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #ddd;
+  cursor: pointer;
+}
+.contact .delete:hover{
+  background-color: hsl(354, 40%, 50%);
+}
+
+.contact .edit{
+    float:right;
+    font-size:2.5rem;
+    color:black;
+    width:10%;
+cursor: pointer;
+}
+.contact .edit:hover{
+    color:cornflowerblue;
+}
+.contact h3{
+  color: #333;
+  padding-top: 1.0rem;
+  line-height: 3.0rem;
+  font-size: 2.0rem;
+  padding: 0 2rem;
+}
+.contact:hover h3{
+  color: hsl(354, 40%, 50%);
+}
+.contact p{
+  color: #666;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  padding: 0 3rem;
+  vertical-align: top;
+}
+.fab{
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/179202/plus.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(354, 40%, 70%);
+  background-position: center center;
+  background-size: 50% 50%;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  box-shadow: 2px 2px 8px hsl(0, 0%, 0%);
+}
+.fab:hover{
+  background-color: hsl(167, 50%, 50%);
+}
+.overlay{
+  width: 100%;
+  height: 110%;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  position:fixed;
+  z-index: 100;
+  top:0;
+}
+.contactform{
+  position: fixed;
+  width: 80vw;
+  height: 80vh;
+  top: 10vh;
+  left: 10vw;
+  background-color: #f4f4f4;
+  box-shadow: 2px 2px 12px hsl(0, 0%, 0%);
+    z-index:101;
+    overflow:auto;
+}
+.contactform fieldset{
+    height:100%;
+    width:100%;
+}
+
+.contactform legend{
+    font-size:2rem;
+    position:relative;
+    top:1%;
+}
+.contactform label {
+	display: inline-block;
+	float: left;
+	clear: left;
+	width: 5rem;
+	text-align: right;
+        padding:.25rem 2rem;
+    margin:2rem 1rem;
+}
+.contactform input{
+    width:80%;
+    font-size:1rem;
+    padding:.25rem 2rem;
+    display: inline-block;
+	float: left;
+    margin:2rem 1rem;
+}
+
+.contactform button{
+    border:none;
+    font-size:1.5rem;
+  float:right;
+    padding:.25rem 2rem;
+    background-color:cornflowerblue;
+    color:white;
+    margin:1rem;
+    position:relative;
+/*    left:50%;*/
+    cursor:pointer;
+    clear:both;
+}
+
+.not{
+    display:none;
+}
+#btnCancel{
+    background-color:firebrick;
+}
+
+
+    

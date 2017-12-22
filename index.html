@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LocalStorage Contacts</title>
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Manager</h1>
+    </header>
+    <main>
+        <ul class="contacts">
+
+        </ul>
+    </main>
+    <footer>
+        <div class="fab"></div>
+
+    </footer>
+
+    <div class="overlay not"></div>
+
+    <div class="formContainer not">
+        <form class="contactform">
+            <fieldset>
+                <legend>New Contact</legend>
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input id="fullName" placeholder="Enter Full Name" type="text" autofocus required/>
+                </div>
+                <div>
+                    <label for="input-email">Email:</label>
+                    <input id="input-email" placeholder="Enter Email" type="text" required/>
+                </div>
+                <div>
+                    <label for="input-phone">Phone Number:</label>
+                    <input id="input-phone" placeholder="Enter Phone Number" type="text" required/>
+                </div>
+                <div>
+                <button id="btnCancel" type="submit">Cancel</button>
+                <button id="btnSave" type="submit">Save</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    
+        <div class="editformContainer not">
+        <form class="contactform">
+            <fieldset>
+                <legend>Edit Contact</legend>
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input id="editFullName" placeholder="Enter Full Name" type="text" autofocus required/>
+                </div>
+                <div>
+                    <label for="input-email">Email:</label>
+                    <input id="editinput-email" placeholder="Enter Email" type="text" required/>
+                </div>
+                <div>
+                    <label for="input-phone">Phone Number:</label>
+                    <input id="editinput-phone" placeholder="Enter Phone Number" type="text" required/>
+                </div>
+                <div>
+                <button id="btnCancel" type="submit">Cancel</button>
+                <button id="btnEdit" type="submit">Save</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    
+    
+    
+    <template id="myTemplate" class="testClass">
+           <li class="contact">
+                <span class="delete"></span>
+                <h3>Luke Skywalker</h3>
+                <p class="material-icons edit">border_color</p>
+                <p class="email">luke.skywalker@jedi.org</p>
+                <p class="phone">613-321-8765</p>
+            </li>
+    </template>
+
+
+
+    <script src="JS/main.js"></script>
+    <script src="JS/starter.js"></script>
+</body>
+  
+</html>
+
+
+
